@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product — Dunova</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="mark">D</span>
+        <span>Dunova</span>
+        <span class="ar">دونوفا</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#order">Order</a></li>
+      </ul>
+      <a class="nav-cta" href="https://wa.me/?text=Hi%20Dunova%2C%20I%20want%20to%20order%20sneakers." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <p style="margin-top:1.25rem;"><a class="muted" href="products.html">← Back to shop</a></p>
+    <div class="detail" id="detail">
+      <p class="muted">Loading…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div><strong>Dunova / دونوفا</strong></div>
+      <div class="footer-note">Preview · Ships from Putian, China</div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script>
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var id = params.get("id") || "clean-court-low";
+      var p = window.DUNOVA_PRODUCTS.find(function (x) { return x.id === id; }) || window.DUNOVA_PRODUCTS[0];
+      document.title = p.name + " — Dunova";
+      var sizes = p.sizes.map(function (s, i) {
+        return '<span class="size-chip' + (i === 2 ? ' active' : '') + '">' + s + '</span>';
+      }).join("");
+      var wa = "https://wa.me/?text=" + encodeURIComponent(
+        "Hi Dunova, I want to order: " + p.name + " (" + p.nameAr + "), size ____, qty 1."
+      );
+      document.getElementById("detail").innerHTML =
+        '<div class="detail-media"><img src="' + p.image + '" alt="' + p.name + '" style="width:100%;max-width:360px;"></div>' +
+        '<div class="detail-info">' +
+          '<h1>' + p.name + '</h1>' +
+          '<div class="ar-line">' + p.nameAr + '</div>' +
+          '<div class="price">$' + p.price + '</div>' +
+          '<p>' + p.blurb + '</p>' +
+          '<p class="ar-line" style="margin-top:0.5rem;">' + p.blurbAr + '</p>' +
+          '<p style="margin-top:1rem;"><strong>EU sizes</strong></p>' +
+          '<div class="size-row">' + sizes + '</div>' +
+          '<ul>' +
+            '<li>Unbranded / no third-party logos</li>' +
+            '<li>Ships from Putian, China</li>' +
+            '<li>Retail target: Gulf (Saudi &amp; UAE)</li>' +
+          '</ul>' +
+          '<div class="actions">' +
+            '<a class="btn btn-whatsapp" href="' + wa + '" target="_blank" rel="noopener">Order on WhatsApp</a>' +
+            '<a class="btn btn-ghost" href="products.html">More styles</a>' +
+          '</div>' +
+        '</div>';
+    })();
+  </script>
+</body>
+</html>

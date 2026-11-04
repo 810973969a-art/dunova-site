@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dunova — Everyday comfort, desert-ready</title>
+  <meta name="description" content="Dunova unbranded casual sneakers for Saudi Arabia and the UAE. $35–55. Ships from Putian, China." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="mark">D</span>
+        <span>Dunova</span>
+        <span class="ar">دونوفا</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#order">Order</a></li>
+      </ul>
+      <a class="nav-cta" href="https://wa.me/?text=Hi%20Dunova%2C%20I%20want%20to%20order%20sneakers." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div>
+        <div class="hero-badge">Saudi · UAE · $35–55</div>
+        <h1>Everyday comfort,<br />desert-ready.</h1>
+        <p class="tagline">Unbranded casual sneakers made for Gulf heat and daily wear.</p>
+        <p class="tagline-ar">راحة يومية · جاهزة للصحراء</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="products.html">Shop the lineup</a>
+          <a class="btn btn-whatsapp" href="https://wa.me/?text=Hi%20Dunova%2C%20I%20want%20to%20order%20sneakers." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+        <p class="muted">Ships from Putian, China · 1 pair MOQ friendly · No brand logos</p>
+      </div>
+      <aside class="hero-card">
+        <div class="visual">
+          <img src="images/sock-slipon-1.jpg" alt="Dunova Sock Knit Runner" />
+        </div>
+        <div class="hero-meta">
+          <div>
+            <strong>Mesh Runner</strong>
+            <div class="muted">Breathable · Everyday miles</div>
+          </div>
+          <span class="price-chip">from $36</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="container section">
+      <div class="section-head">
+        <div>
+          <h2>First six styles</h2>
+          <p>Placeholder catalog for preview — real photos coming after samples.</p>
+        </div>
+        <a class="btn btn-ghost" href="products.html">View all</a>
+      </div>
+      <div class="grid" id="home-grid"></div>
+    </section>
+
+    <section class="container section">
+      <div class="section-head">
+        <div>
+          <h2>Why Dunova</h2>
+          <p>Built for Saudi &amp; UAE shoppers who want value without big-brand markup.</p>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <strong>Desert-ready comfort</strong>
+          <p>Breathable uppers and soft foam for 40°C+ days and long walks.</p>
+        </div>
+        <div class="feature">
+          <strong>Fair Gulf pricing</strong>
+          <p>Retail $35–55 — under typical big-brand sale tags.</p>
+        </div>
+        <div class="feature">
+          <strong>WhatsApp-first</strong>
+          <p>Ask sizes, colors, and shipping on chat. Fast replies in EN / AR.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="order">
+      <div class="cta-band">
+        <div>
+          <h2>Ready to try a pair?</h2>
+          <p>Message us on WhatsApp — tell us size and style.</p>
+          <p class="ar">تواصل عبر واتساب — أخبرنا بالمقاس والطراز</p>
+        </div>
+        <a class="btn btn-whatsapp" href="https://wa.me/?text=Hi%20Dunova%2C%20I%20want%20size%20%26%20style%20info." target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>Dunova / دونوفا</strong>
+        <div>Everyday comfort, desert-ready.</div>
+      </div>
+      <div class="footer-note">Preview site · Ships from Putian, China · Unbranded original styles only</div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script>
+    document.getElementById("home-grid").innerHTML =
+      window.DUNOVA_PRODUCTS.map(window.dunovaProductCard).join("");
+  </script>
+</body>
+</html>
