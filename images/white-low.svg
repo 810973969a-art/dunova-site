@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="White Low-Top">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f4f4"/>
+      <stop offset="100%" stop-color="#e6e6e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g)"/>
+  <!-- sole -->
+  <ellipse cx="200" cy="290" rx="130" ry="28" fill="#2a2a2a" opacity="0.18"/>
+  <!-- shoe body -->
+  <path d="M70 250 C90 200, 140 170, 210 175 C270 180, 320 200, 340 230 C350 245, 340 265, 310 270 L120 275 C90 275, 70 265, 70 250 Z" fill="#fff" stroke="#4a4a4a" stroke-width="3"/>
+  <!-- toe -->
+  <path d="M70 250 C85 235, 110 228, 140 230 L145 268 L95 270 C78 268, 70 260, 70 250 Z" fill="#4a4a4a" opacity="0.18"/>
+  <!-- laces / strap hint -->
+  <path d="M165 195 L195 235 M185 190 L215 230 M205 188 L235 228" stroke="#4a4a4a" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  <!-- heel tab -->
+  <path d="M300 210 C310 195, 325 195, 330 215 L318 250 C312 255, 300 250, 298 240 Z" fill="#4a4a4a" opacity="0.35"/>
+  <text x="200" y="345" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#1a1a1a" font-weight="600">White Low-Top</text>
+  <text x="200" y="370" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#6b6b6b">Dunova</text>
+</svg>
