@@ -49,5 +49,5 @@ window.dunovaProductCard = function (p) {
 
 window.dunovaWhatsAppLink = function (text) {
   var msg = text || "Hi Dunova, I want to order sneakers.";
-  return "https://wa.me/?text=" + encodeURIComponent(msg);
+  return "https://wa.me/8617605943241?text=" + encodeURIComponent(msg);
 };
