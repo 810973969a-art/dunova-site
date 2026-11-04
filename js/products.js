@@ -6,8 +6,8 @@ window.DUNOVA_PRODUCTS = [
     price: 36,
     blurb: "Clean low-top court sneaker, smooth upper and rubber sole. Goes with thobe or jeans. Colors: white, beige. Sizes 39\u201344.",
     blurbAr: "حذاء منخفض بتصميم نظيف ونعل مطاطي. يناسب الثوب أو الجينز. الألوان: أبيض، بيج. المقاسات 39\u201344.",
-    image: "images/white-court-1.jpg",
-    gallery: ["images/white-court-1.jpg", "images/white-court-2.jpg"],
+    image: "images/court-front.jpg",
+    gallery: ["images/court-front.jpg", "images/court-left.jpg", "images/court-right.jpg", "images/court-back.jpg", "images/court-model.jpg"],
     sizes: ["39", "40", "41", "42", "43", "44"]
   },
   {
@@ -17,8 +17,8 @@ window.DUNOVA_PRODUCTS = [
     price: 39,
     blurb: "Breathable knit upper, thick cushioned sole, no laces. Colors: sand, black, beige, black/white. Sizes 39\u201348.",
     blurbAr: "جزء علوي محبوك قابل للتنفس ونعل سميك مريح بدون أربطة. الألوان: رملي، أسود، بيج، أسود/أبيض. المقاسات 39\u201348.",
-    image: "images/knit-slipon-1.jpg",
-    gallery: ["images/knit-slipon-1.jpg", "images/knit-slipon-2.jpg", "images/knit-slipon-3.jpg", "images/knit-slipon-4.jpg"],
+    image: "images/knit-front.jpg",
+    gallery: ["images/knit-front.jpg", "images/knit-left.jpg", "images/knit-right.jpg", "images/knit-back.jpg", "images/knit-model.jpg"],
     sizes: ["39", "40", "41", "42", "43", "44", "45", "46", "47", "48"]
   },
   {
@@ -28,8 +28,8 @@ window.DUNOVA_PRODUCTS = [
     price: 42,
     blurb: "Sock-fit knit slip-on with a light white chunky sole. Colors: black/white, all black. Sizes 39\u201346.",
     blurbAr: "حذاء جوربي محبوك بنعل أبيض خفيف. الألوان: أسود/أبيض، أسود بالكامل. المقاسات 39\u201346.",
-    image: "images/sock-slipon-1.jpg",
-    gallery: ["images/sock-slipon-1.jpg", "images/sock-slipon-3.jpg"],
+    image: "images/sock-front.jpg",
+    gallery: ["images/sock-front.jpg", "images/sock-left.jpg", "images/sock-right.jpg", "images/sock-back.jpg", "images/sock-model.jpg"],
     sizes: ["39", "40", "41", "42", "43", "44", "45", "46"]
   }
 ];
@@ -41,7 +41,7 @@ window.dunovaProductCard = function (p) {
       '<div class="card-body">' +
         '<h3>' + p.name + '</h3>' +
         '<div class="ar-line">' + p.nameAr + '</div>' +
-        '<div class="card-foot"><span class="price">$' + p.price + '</span><span class="muted">Ships from Putian</span></div>' +
+        '<div class="card-foot"><span class="price">$' + p.price + '</span><span class="muted">Ships from China</span></div>' +
       '</div>' +
     '</a>'
   );
